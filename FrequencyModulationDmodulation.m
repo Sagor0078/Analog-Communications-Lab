@@ -23,7 +23,7 @@ xlabel('time');
 ylabel('amplitude');
 grid on;
 %% generating frequecy modulating signal
-yt = ac.*sin((2*pi*fc*t)+(B*am.*sin(2*pi*fm*t)));
+yt = ac.*sin((2*pi*fc*t)+(B*sin(2*pi*fm*t)));
 subplot(4,1,3);
 plot(t,yt,'c');
 title('frequency modulating signal');
